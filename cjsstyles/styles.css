@@ -1,0 +1,183 @@
+
+body {
+  background-color: #599AFF ;
+  text-align: center;
+  font-size: 2em;
+}
+
+.tdwrap {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#todoList li {
+  opacity: 0;
+  transition: all 1s;
+  padding: 10px 5px;
+  list-style: none;
+  font-family: "lato", sans-serif;
+  color: white;
+  font-weight: 300;
+  text-transform: capitalize;
+  border-bottom: 1px solid #7CB6FF;
+  text-align: left;
+  width: 100%;
+
+}
+
+li span {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  display: block;
+  padding: 20px 20px 0;
+}
+
+li textarea {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 300;
+  color: #7CB6FF;
+  border: none;
+  border-bottom: 1px solid #7CB6FF;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.notebtn {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #7CAFFF;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hasNote, .noNote {
+  transition: all 0.5s;
+}
+
+#toDo::-webkit-input-placeholder {
+ color: #7CB6FF;
+}
+
+
+#toDo {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 300;
+  color: white;
+  border: none;
+  border-bottom: 1px solid #7CB6FF;
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+#textBox:focus{
+  outline: none;
+}
+
+#btnAdd {
+  background-color: #7CAFFF;
+  border-radius: 10px;
+  width: 11%;
+  float: right;
+  height: 50px;
+
+}
+
+
+#todoList p {
+  display: inline-block;
+  margin: 0 20px;
+  margin-left: 0px;
+  width: 65%;
+  word-break:  break-all;
+  background: #59BAFF;
+  border-radius: 5px;
+  padding: 5px 15px;
+  
+}
+
+#todoList p:hover {
+  background-color: #79C5FB;
+  cursor: pointer;
+}
+
+
+#todoList {
+  max-width: 500px;
+  margin: 20px auto;
+
+}
+
+.deletetask {
+  padding: 5px 15px;
+  color: #FFF;
+  line-height: normal;
+  cursor: pointer;
+  display: inline;
+  margin:0 10px;
+  float: right;
+
+}
+
+.striketask {
+  padding: 5px;
+  color: #FFF;
+  cursor: pointer;
+  display: inline;
+  float: right;
+}
+
+.tdbtn {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: lato;
+  font-weight: 300;
+  display: inline;
+  font-size: 1.3em;
+  max-width: 500px;
+}
+
+#btnClear {
+  background-color: #7CAFFF;
+  padding: 20px;
+  border-radius: 15px;
+  width: 95%;
+}
+
+@media screen and (max-width:500px){
+
+  body {
+    font-size: 1.5em;
+  }
+
+  #todoList p {
+    width: 60%;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: 400;
+  }
+
+  #todoList li {
+    padding: 10px 0;
+
+  }
+
+  .deletetask, .striketask {
+    margin: 0;
+  }
+
+}
+
